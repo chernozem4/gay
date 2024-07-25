@@ -33,7 +33,7 @@ class Queries:
     INSERT_INTO_DISHES = '''
         INSERT OR IGNORE INTO dishes (title,price,photo,category_id) VALUES ('Peppa',480,'image/peppa.jpg', 1),
         ('Boloneze',550,'image/Болоньезе.jpg',2),
-        ('Mexizano',510,'image/mexicano-2.jpg',3),
+        ('Mexicano',510,'image/mexicano-2.jpg',3),
         ('99 сыров', 1250, 'image/99 cheese.jpg',4),
         ('Цезарь', 600, 'image/Цезарь.jpg',5),
         ('Тайская', 450, 'image/Тайская.jpg', 6),
