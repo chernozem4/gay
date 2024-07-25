@@ -9,7 +9,8 @@ class Database:
 
     def create_tables(self):
         with sqlite3.connect(self.path) as connect:
-            connect.execute(Queries.CREATE_TABLE_DISHES)
+
+            connect.execute(Queries.CREATE_COMMENT_TABLE)
             connect.execute(Queries.CREATE_TABLE_DISHES)
             connect.execute(Queries.CREATE_TABLE_CATEGORIES)
             connect.execute(Queries.INSERT_INTO_DISHES)

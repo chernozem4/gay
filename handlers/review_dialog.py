@@ -67,9 +67,7 @@ async def process_food_rating(message: types.Message, state: FSMContext):
     kb = types.ReplyKeyboardMarkup(
         keyboard=[
             [types.KeyboardButton(text='Чисто')],
-            [types.KeyboardButton(text='Грязно')],
-            [types.KeyboardButton(text='Пыльно')],
-            [types.KeyboardButton(text='Нормально')]
+            [types.KeyboardButton(text='Грязно')]
         ],
         resize_keyboard=True
     )

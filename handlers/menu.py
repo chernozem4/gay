@@ -24,7 +24,7 @@ async def menu(message: types.Message):
     await message.answer('наш ассортимент на данный момент', reply_markup=kb)
 
 
-signal=('Пепперони','99 сыров', 'Болоньезе', '4 сезона', 'Цезарь','Тайская','Мексикано')
+signal=('Pepproni','99_cheese', 'Boloneze', '4_season', 'Cesar', 'Tay_pizza', 'Mexicano')
 
 @menu_router.callback_query(lambda call:call.data in signal)
 async def dishes(call:types.CallbackQuery):
